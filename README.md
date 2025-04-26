@@ -1,4 +1,4 @@
-# Warnings!  Make sure the images you upload are under 50KB
+# Warning!  Make sure the images you upload are under 50KB
 
 # FreelanceHub - Freelancing Platform
 
