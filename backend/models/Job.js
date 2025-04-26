@@ -33,10 +33,17 @@ const jobSchema = new mongoose.Schema({
     deadline: {
         type: Date
     },
-    createdAt: {
-        type: Date,
-        default: Date.now
+    candidates: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User'
+    }],
+    posterRole: {
+        type: String,
+        enum: ['client', 'freelancer'],
+        default: 'client'
     }
+}, {
+    timestamps: true
 });
 
 module.exports = mongoose.model('Job', jobSchema); 
