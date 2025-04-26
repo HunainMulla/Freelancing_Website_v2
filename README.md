@@ -1,3 +1,5 @@
+# Warnings!  Make sure the images you upload are under 50KB
+
 # FreelanceHub - Freelancing Platform
 
 FreelanceHub is a modern, full-stack freelancing platform that connects talented freelancers with clients seeking professional services. Built with React for the frontend and Node.js/Express for the backend, it provides a seamless experience for both freelancers and clients.
