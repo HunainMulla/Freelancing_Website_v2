@@ -1,97 +1,88 @@
-# FreelancePro - MERN Stack Freelancing Platform
+# FreelanceHub - Freelancing Platform
 
-A full-stack freelancing platform built with the MERN stack (MongoDB, Express.js, React.js, Node.js) that allows freelancers and clients to connect, post jobs, and collaborate on projects.
+FreelanceHub is a modern, full-stack freelancing platform that connects talented freelancers with clients seeking professional services. Built with React for the frontend and Node.js/Express for the backend, it provides a seamless experience for both freelancers and clients.
+#Features:
+### For Freelancers
+- **Professional Profile Creation**
+  - Customizable portfolio showcase
+  - Skill highlighting
+  - Professional background details
+  - Hourly rate setting
+  - Profile picture upload
 
-## Features
+- **Project Management**
+  - Browse available projects
+  - Submit proposals
+  - Track ongoing projects
+  - Manage orders through dashboard
+  - Secure payment reception
 
-- User authentication (Register/Login)
-- Role-based access (Client/Freelancer)
-- Job posting and management
-- Job search and filtering
-- User profiles
-- Job application system
-- Real-time status updates
+### For Clients
+- **Project Posting**
+  - Detailed project description
+  - Budget setting
+  - Required skills specification
+  - Project timeline definition
 
-## Prerequisites
+- **Freelancer Selection**
+  - Browse freelancer profiles
+  - Review portfolios and ratings
+  - Direct messaging system
+  - Proposal review system
 
-- Node.js (v14 or higher)
-- MongoDB (local installation or MongoDB Atlas account)
-- npm or yarn package manager
+### General Features
+- **User Authentication**
+  - Secure login/registration
+  - Role-based access control
+  - Password recovery system
+  - Email verification
 
-## Installation
+- **Search and Discovery**
+  - Advanced freelancer search
+  - Project category filtering
+  - Skill-based matching
+  - Portfolio browsing
 
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd freelance-platform
-```
+- **Payment System**
+  - Secure payment processing
+  - Multiple payment methods
+  - Payment milestone tracking
+  - Escrow system for security
 
-2. Install dependencies for the entire project:
-```bash
-npm run install-all
-```
+- **Communication**
+  - Real-time messaging
+  - Project discussion board
+  - File sharing capabilities
+  - Notification system
 
-3. Create a `.env` file in the backend directory with the following variables:
-```
-MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-PORT=5000
-```
+## 🚀 Technology Stack
 
-## Running the Application
+### Frontend
+- React.js
+- React Router for navigation
+- Context API for state management
+- CSS3 for styling
+- Responsive design for all devices
 
-1. Start both frontend and backend servers:
-```bash
+### Backend
+- Node.js
+- Express.js
+- MongoDB for database
+- JWT for authentication
+- Bcrypt for password hashing
+
+### Security Features
+- Password encryption
+- JWT token authentication
+- Secure payment processing
+- Input validation
+- XSS protection
+
+
+Backend:
+npm i
 npm start
-```
 
-This will start:
-- Backend server on http://localhost:5000
-- Frontend development server on http://localhost:3000
-
-## Project Structure
-
-```
-freelance-platform/
-├── backend/             # Backend server
-│   ├── models/         # Database models
-│   ├── routes/         # API routes
-│   ├── middleware/     # Custom middleware
-│   └── server.js       # Server entry point
-├── frontend/           # React frontend
-│   ├── public/
-│   └── src/
-│       ├── components/ # React components
-│       ├── context/    # Context providers
-│       └── App.js      # Main app component
-└── package.json        # Project configuration
-```
-
-## API Endpoints
-
-### Authentication
-- POST /api/auth/register - Register a new user
-- POST /api/auth/login - Login user
-
-### Jobs
-- GET /api/jobs - Get all jobs
-- GET /api/jobs/:id - Get specific job
-- POST /api/jobs - Create new job
-- PATCH /api/jobs/:id/status - Update job status
-- POST /api/jobs/:id/apply - Apply for a job
-
-### Users
-- GET /api/users/profile - Get user profile
-- PATCH /api/users/profile - Update user profile
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a new Pull Request
-
-## License
-
-This project is licensed under the ISC License. 
+Frontend:
+npm i 
+npm start
